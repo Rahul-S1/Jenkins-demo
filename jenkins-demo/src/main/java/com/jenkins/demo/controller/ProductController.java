@@ -52,5 +52,12 @@ public class ProductController {
         }
         return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }
+
+
+    @GetMapping("/msg")
+    public String msg()
+    {
+        return "welcome";
+    }
 }
 
